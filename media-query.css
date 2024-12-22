@@ -1,0 +1,60 @@
+@media (min-width: 900px) and (max-width: 4000px) {
+  .logo {
+    width: 25% !important ;
+    height: auto !important ;
+    object-fit: contain;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-light .navbar-nav .nav-link::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 5px;
+      bottom: 0;
+      left: 50%;
+      background: var(--primary);
+      transition: .5s;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover::before,
+  .navbar-light .navbar-nav .nav-link.active::before {
+      width: 100%;
+      left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link  {
+      margin-left: 0;
+      padding: 10px 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 900px) {
+  .logo {
+    width: 35% !important ;
+    height: auto !important ;
+    object-fit: contain;
+  }
+
+}
+@media (max-width: 600px) {
+  .logo-container {
+    padding: 10px; /* Add padding on smaller screens */
+  }
+  .logo {
+    width: 25%; /* Slightly reduce size on mobile */
+  }
+}
+@media (min-width: 390px) {
+  .logo {
+      width: 50%  ;
+      height: auto  ;
+      object-fit: contain;
+  }
+}
+@media (min-width: 576px) {
+  .team-item .row {
+      height: 350px;
+  }
+  
+}
